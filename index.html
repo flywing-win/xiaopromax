@@ -1,56 +1,58 @@
-<!DOCTYPE html>   < !DOCTYPE html>
-<html lang="zh">   < css长= " zh" >
-<head>   < head   头>
-    <meta charset="UTF-8">   <meta   元 charset   字符集   字符集="UTF-8"   "UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta   元 name   名字   名字="viewport"   "viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
     <title>慧流一号水利设计商城</title>
-    <style>   < style   风格>
-        body {   身体{
+    <style>
+        * { box-sizing: border-box; }
+        body {
             margin: 0; padding: 0;
-            /* 背景图：确保文件名和你上传的一致 */
+            /* 背景图：确保文件名完全一致 */
             background: url('c01dc1f25bcbaca273b2d7678c2cf0a1.jpg') no-repeat center center fixed;
-            background-size: cover;   background-size:封面;
-            font-family: sans-serif;
+            background-size: cover;
+            font-family: "Microsoft YaHei", sans-serif;
+            min-height: 100vh;
         }
-        .header {   ．标题{
-            background: rgba(0, 74, 153, 0.8);
+        .header {
+            background: rgba(0, 74, 153, 0.85);
             color: white; text-align: center; padding: 30px;
+            border-bottom: 4px solid #33cc33;
         }
         .container {
-            display: flex; justify-content: center; padding: 50px;
+            display: flex; justify-content: center; padding: 60px 20px;
         }
         .card {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 15px; width: 350px; padding: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            text-align: center;   text-align:中心;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px; width: 380px; padding: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            text-align: center;
         }
         .product-img {
-            width: 100%; border-radius: 10px;
+            width: 100%; border-radius: 8px; border: 1px solid #ddd;
         }
-        .buy-btn {   ．buy-btn   .buy-btn {
+        .price-text {
+            color: #33cc33; font-size: 20px; font-weight: bold; margin: 15px 0;
+        }
+        .buy-btn {
             display: inline-block; background: #004a99; color: white;
-            padding: 10px 25px; text-decoration: none; border-radius: 5px;
-            margin-top: 15px; font-weight: bold;
+            padding: 12px 30px; text-decoration: none; border-radius: 5px;
+            font-weight: bold;
         }
-    </style>   < / style>
-</head>   < / head>
-<body>   < body   身体>
-
-    <div class="header">   <div class   类="header"   "header">
+    </style>
+</head>
+<body>
+    <div class="header">
         <h1>慧流一号的水利设计商城</h1>
-        <p>专注工程级水利流量计量解决方案</p>
-    </div>   < / div>
-
-    <div class="container">   <div class   类="container">
+        <p>专业·精准·可靠的水利计量方案</p>
+    </div>
+    <div class="container">
         <div class="card">
-            <img src="1ce64ef9b8ac77d85c8dda7e7444f3b5.jpg" class="product-img" alt="巴歇尔槽">
+            <img src="1ce64ef9b8ac77d85c8dda7e7444f3b5.jpg" class="product-img">
             <h3>标准巴歇尔计量槽</h3>
             <p>适用于明渠流量测量的经典明渠堰槽</p>
-            <div style="color: #33cc33; font-weight: bold; margin: 10px 0;">工程洽谈</div>
-            <a href="detail.html" class="buy-btn">查看详情</a>
-        </div>   < / div>
-    </div>   < / div>
-
-</body>   < / body>
-</html>   < / html>
+            <div class="price-text">工程洽谈</div>
+            <a href="detail.html" class="buy-btn">查看产品详情</a>
+        </div>
+    </div>
+</body>
+</html>
